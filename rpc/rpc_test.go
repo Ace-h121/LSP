@@ -20,7 +20,8 @@ func TestEncode(t *testing.T) {
 
 func TestDecode(t *testing.T) {
 	expected := "Content-Length: 15\r\n\r\n{\"Method\":\"hi\"}"
-	method, contentLength, err := rpc.DecodeMessage([]byte(expected))
+	method, content, err := rpc.DecodeMessage([]byte(expected))
+	contentLength := len(content)
 	if err != nil {
 		t.Fatal(err)
 	}
