@@ -1,5 +1,11 @@
-[LSP]2024/05/14 17:49:59 main.go:17: Logger Started
-[LSP]2024/05/14 17:49:59 main.go:31: Received msg with method: initialize
-[LSP]2024/05/14 17:49:59 main.go:39: Connected to Neovim 0.9.5
-[LSP]2024/05/14 17:49:59 main.go:47: Sent the reply
-[LSP]2024/05/14 17:49:59 main.go:31: Received msg with method: initialized
+[LSP]2024/05/15 07:27:43 main.go:17: Logger Started
+[LSP]2024/05/15 07:27:43 main.go:31: Received msg with method: initialize
+[LSP]2024/05/15 07:27:43 main.go:39: Connected to Neovim 0.9.5
+[LSP]2024/05/15 07:27:43 main.go:47: Sent the reply
+[LSP]2024/05/15 07:27:43 main.go:31: Received msg with method: initialized
+[LSP]2024/05/15 07:27:46 main.go:31: Received msg with method: textDocument/didOpen
+[LSP]2024/05/15 07:27:46 main.go:53: Opened: file:///home/ace/Documents/Programming/Networking/LSP/README.md woah
+
+dfsdf
+[LSP]2024/05/15 07:30:05 main.go:31: Received msg with method: textDocument/didSave
+[LSP]2024/05/15 07:30:05 main.go:31: Received msg with method: shutdown

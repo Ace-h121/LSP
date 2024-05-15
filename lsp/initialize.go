@@ -20,11 +20,14 @@ type InitializeResponse struct {
 }
 
 type InitializeResult struct {
-	Capabilities ServerCapabilities `json:"capability"`
+	Capabilities ServerCapabilities `json:"capabilities"`
 	ServerInfo ServerInfo `json:"serverInfo"`
 }
 
-type ServerCapabilities struct{}
+type ServerCapabilities struct{
+	TextDocumentSync int `json:"textDocumentSync"`
+	
+}
 
 type ServerInfo struct{
 	Name string `json:"name"`
@@ -38,7 +41,9 @@ func NewInitializeResponse(id int) InitializeResponse {
 			ID: &id,
 		},
 		Result: InitializeResult{
-			Capabilities: ServerCapabilities{},
+			Capabilities: ServerCapabilities{
+				TextDocumentSync: 1,
+			},
 			ServerInfo: ServerInfo{
 				Name: "markdownlsp",
 				Version: "0.0.0.0-beta1.final",
