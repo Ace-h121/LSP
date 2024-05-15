@@ -3,6 +3,7 @@ package main
 import (
 	"bufio"
 	"encoding/json"
+	"io"
 	"log"
 	"os"
 
@@ -18,6 +19,8 @@ func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Split(rpc.Split)
 
+	writer := os.Stdout
+	
 	state := analysis.NewState()
 	for scanner.Scan() {
 		msg := scanner.Bytes()
@@ -25,11 +28,11 @@ func main() {
 		if err != nil {
 			logger.Printf("Got error: %s", err)
 		}
-		handleMessage(logger, state, method, content)
+		handleMessage(logger, writer, state, method, content)
 	}
 }
 
-func handleMessage(logger *log.Logger, state analysis.State, method string, contents []byte) {
+func handleMessage(logger *log.Logger, writer io.Writer state analysis.State, method string, contents []byte) {
 	logger.Printf("Received msg with method: %s", method)
 	switch method {
 	case "initialize":
@@ -42,9 +45,8 @@ func handleMessage(logger *log.Logger, state analysis.State, method string, cont
 			request.Params.ClientInfo.Name,
 			request.Params.ClientInfo.Version)
 		msg := lsp.NewInitializeResponse(request.ID)
-		reply := rpc.EncodeMessage(msg)
-		writer := os.Stdout
-		writer.Write([]byte(reply))
+
+		writeResponse(writer, msg)
 
 		logger.Print("Sent the reply")
 
@@ -52,6 +54,7 @@ func handleMessage(logger *log.Logger, state analysis.State, method string, cont
 		var request lsp.DidOpenTextDocumentNotification
 		if err := json.Unmarshal(contents, &request); err != nil {
 			logger.Printf("Couldnt Parse: %s", err)
+			return
 		}
 		logger.Printf("Opened: %s", request.Params.TextDocument.URI)
 		state.OpenDocument(request.Params.TextDocument.URI, request.Params.TextDocument.Text)
@@ -60,13 +63,28 @@ func handleMessage(logger *log.Logger, state analysis.State, method string, cont
 		var request lsp.TextDocumentDidChanceNotification
 		if err := json.Unmarshal(contents, &request); err != nil {
 			logger.Printf("TextDocument/DidChange error: %s", err)
+			return
 		}
 		logger.Printf("Changed %s", request.Params.TextDocument.URI)
 
 		for _, change := range request.Params.ContentChanges {
 			state.UpdateDocument(request.Params.TextDocument.URI, change.Text)
 		}
+	case "textDocument/hover":
+		var request lsp.HoverRequest
+		if err := json.Unmarshal(contents, &request); err != nil {
+			logger.Printf("textDocument/hover error: %s, err", err)
+			return
+		}
+
+
+
 	}
+}
+
+func writeResponse(writer io.Writer, msg any) {
+	reply := rpc.EncodeMessage(msg)
+	writer.Write([]byte(reply))
 }
 
 func getLogger(filename string) *log.Logger {
