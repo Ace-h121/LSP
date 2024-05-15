@@ -20,7 +20,7 @@ func main() {
 	scanner.Split(rpc.Split)
 
 	writer := os.Stdout
-	
+
 	state := analysis.NewState()
 	for scanner.Scan() {
 		msg := scanner.Bytes()
@@ -32,7 +32,7 @@ func main() {
 	}
 }
 
-func handleMessage(logger *log.Logger, writer io.Writer state analysis.State, method string, contents []byte) {
+func handleMessage(logger *log.Logger, writer io.Writer, state analysis.State, method string, contents []byte) {
 	logger.Printf("Received msg with method: %s", method)
 	switch method {
 	case "initialize":
@@ -76,9 +76,6 @@ func handleMessage(logger *log.Logger, writer io.Writer state analysis.State, me
 			logger.Printf("textDocument/hover error: %s, err", err)
 			return
 		}
-
-
-
 	}
 }
 
