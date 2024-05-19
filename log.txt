@@ -1,6 +1,6 @@
-[LSP]2024/05/19 10:13:52 main.go:17: Logger Started
-[LSP]2024/05/19 10:13:52 main.go:36: Received msg with method: initialize
-[LSP]2024/05/19 10:13:52 main.go:44: Connected to Neovim 0.9.5
-[LSP]2024/05/19 10:13:52 main.go:51: Sent the reply
-[LSP]2024/05/19 10:13:52 main.go:36: Received msg with method: initialized
-[LSP]2024/05/19 10:24:16 main.go:36: Received msg with method: shutdown
+[LSP]2024/05/19 16:11:23 main.go:17: Logger Started
+[LSP]2024/05/19 16:11:23 main.go:36: Received msg with method: initialize
+[LSP]2024/05/19 16:11:23 main.go:44: Connected to Neovim 0.9.5
+[LSP]2024/05/19 16:11:23 main.go:51: Sent the reply
+[LSP]2024/05/19 16:11:23 main.go:36: Received msg with method: initialized
+[LSP]2024/05/19 16:13:38 main.go:36: Received msg with method: shutdown
