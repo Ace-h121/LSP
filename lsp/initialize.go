@@ -7,6 +7,7 @@ type InitializeRequest struct {
 
 type InitializeRequestParams struct {
 	ClientInfo *ClientInfo `json:"clientInfo"`
+	// ... there's tons more that goes here
 }
 
 type ClientInfo struct {
@@ -25,10 +26,12 @@ type InitializeResult struct {
 }
 
 type ServerCapabilities struct {
-	TextDocumentSync   int  `json:"textDocumentSync"`
-	HoverProvider      bool `json:"hoverProvider"`
-	DefinitionProvider bool `json:"definitionProvider"`
-	CodeActionProvider bool `json:"codeActionProvider"`
+	TextDocumentSync int `json:"textDocumentSync"`
+
+	HoverProvider      bool           `json:"hoverProvider"`
+	DefinitionProvider bool           `json:"definitionProvider"`
+	CodeActionProvider bool           `json:"codeActionProvider"`
+	CompletionProvider map[string]any `json:"completionProvider"`
 }
 
 type ServerInfo struct {
@@ -48,10 +51,11 @@ func NewInitializeResponse(id int) InitializeResponse {
 				HoverProvider:      true,
 				DefinitionProvider: true,
 				CodeActionProvider: true,
+				CompletionProvider: map[string]any{},
 			},
 			ServerInfo: ServerInfo{
-				Name:    "markdownlsp",
-				Version: "0.0.0.0-beta1.final",
+				Name:    "educationalsp",
+				Version: "0.0.0.0.0.0-beta1.final",
 			},
 		},
 	}
