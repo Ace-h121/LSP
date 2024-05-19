@@ -1,6 +1,97 @@
-[LSP]2024/05/19 16:11:23 main.go:17: Logger Started
-[LSP]2024/05/19 16:11:23 main.go:36: Received msg with method: initialize
-[LSP]2024/05/19 16:11:23 main.go:44: Connected to Neovim 0.9.5
-[LSP]2024/05/19 16:11:23 main.go:51: Sent the reply
-[LSP]2024/05/19 16:11:23 main.go:36: Received msg with method: initialized
-[LSP]2024/05/19 16:13:38 main.go:36: Received msg with method: shutdown
+[LSP]2024/05/19 16:14:26 main.go:17: Logger Started
+[LSP]2024/05/19 16:14:26 main.go:36: Received msg with method: initialize
+[LSP]2024/05/19 16:14:26 main.go:44: Connected to Neovim 0.9.5
+[LSP]2024/05/19 16:14:26 main.go:51: Sent the reply
+[LSP]2024/05/19 16:14:28 main.go:36: Received msg with method: initialized
+[LSP]2024/05/19 16:14:28 main.go:36: Received msg with method: textDocument/didOpen
+[LSP]2024/05/19 16:14:28 main.go:59: Opened: file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:14:34 main.go:36: Received msg with method: textDocument/codeAction
+[LSP]2024/05/19 16:14:36 main.go:36: Received msg with method: textDocument/codeAction
+[LSP]2024/05/19 16:15:51 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:15:51 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:15:51 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:15:51 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:15:51 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:15:51 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:15:51 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:15:51 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:15:51 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:15:51 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:15:51 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:15:51 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:15:52 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:15:52 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:15:52 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:15:52 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:15:52 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:15:52 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:15:53 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:15:53 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:15:53 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:15:53 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:15:53 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:15:53 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:15:54 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:15:54 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:15:54 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:15:54 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:15:54 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:15:54 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:15:54 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:15:54 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:15:54 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:15:54 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:06 main.go:36: Received msg with method: textDocument/codeAction
+[LSP]2024/05/19 16:16:08 main.go:36: Received msg with method: textDocument/codeAction
+[LSP]2024/05/19 16:16:10 main.go:36: Received msg with method: textDocument/codeAction
+[LSP]2024/05/19 16:16:18 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:18 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:18 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:18 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:22 main.go:36: Received msg with method: textDocument/codeAction
+[LSP]2024/05/19 16:16:23 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:23 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:28 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:28 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:28 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:28 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:29 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:29 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:29 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:29 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:30 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:30 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:30 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:30 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:33 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:33 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:33 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:33 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:34 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:34 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:34 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:34 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:34 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:34 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:34 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:34 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:34 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:34 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:35 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:35 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:35 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:35 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:36 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:36 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:36 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:36 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:37 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:37 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:37 main.go:36: Received msg with method: textDocument/didChange
+[LSP]2024/05/19 16:16:37 main.go:68: Changed file:///home/ace/Documents/Programming/Networking/LSP/README.md
+[LSP]2024/05/19 16:16:40 main.go:36: Received msg with method: textDocument/didSave
+[LSP]2024/05/19 16:16:40 main.go:36: Received msg with method: textDocument/didSave
+[LSP]2024/05/19 16:18:06 main.go:36: Received msg with method: textDocument/didSave
+[LSP]2024/05/19 16:18:07 main.go:36: Received msg with method: textDocument/didSave
+[LSP]2024/05/19 16:18:07 main.go:36: Received msg with method: textDocument/didSave
+[LSP]2024/05/19 16:21:42 main.go:36: Received msg with method: shutdown

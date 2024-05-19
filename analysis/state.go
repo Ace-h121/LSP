@@ -66,7 +66,6 @@ func (s *State) Definition(id int, uri string, position lsp.Position) lsp.Defini
 
 }
 
-
 func (s *State) TextDocumentCodeAction(id int, uri string) lsp.TextDocumentCodeActionResponse {
 	text := s.Documents[uri]
 
@@ -108,6 +107,28 @@ func (s *State) TextDocumentCodeAction(id int, uri string) lsp.TextDocumentCodeA
 			ID:  &id,
 		},
 		Result: actions,
+	}
+
+	return response
+}
+
+func (s *State) TextDocumentCompletion(id int, uri string) lsp.CompletionResponse {
+
+	// Ask your static analysis tools to figure out good completions
+	items := []lsp.CompletionItem{
+		{
+			Label:         "Neovim (BTW)",
+			Detail:        "Very cool editor",
+			Documentation: "Fun to watch in videos. Don't forget to like & subscribe to streamers using it :)",
+		},
+	}
+
+	response := lsp.CompletionResponse{
+		Response: lsp.Response{
+			RPC: "2.0",
+			ID:  &id,
+		},
+		Result: items,
 	}
 
 	return response
